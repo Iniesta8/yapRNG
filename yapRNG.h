@@ -31,11 +31,11 @@
 
 */
 
-#ifndef pRNG_H
-#define pRNG_H
+#ifndef yapRNG_H
+#define yapRNG_H
 
 // library version
-#define pRNG_VERSION 100
+#define yapRNG_VERSION 100
 
 // this library is compatible both with Arduino <=0023 and Arduino >=100
 #if defined(ARDUINO) && (ARDUINO >= 100)
@@ -44,7 +44,7 @@
 #include "WProgram.h"
 #endif
 
-// check MCU compatibility - pRNG won't work on Atmega8
+// check MCU compatibility - yapRNG won't work on Atmega8
 #if defined(__AVR_ATmega8__) || defined(__AVR_ATmega8A__)
 #error Sorry, this MCU is not supported (lack of interrupt vector for WDT)!
 #endif

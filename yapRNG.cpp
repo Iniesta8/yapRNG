@@ -94,7 +94,7 @@ ISR(WDT_vect) {
   } else {
     _prngPool[_prngPointer] &= ~(1 << _prngBitPointer);
   }
-  // increment the bit's pointer to distribuite the entropy inside the whole
+  // increment the bit's pointer to distribute the entropy inside the whole
   // pool
   if (++_prngBitPointer > 7) {
     _prngBitPointer = 0;

@@ -52,7 +52,7 @@ current value of the counter of Timer 1 (in case the microcontroller doesn't
 have Timer 1, Timer 0 will be used instead). Then, the less significant bit is
 taken and XORed with the less significant bit of a Fibonacci 32-bits LFSR, Linear
 Feedback Shift Register, and at the end the result is stored into a bit of a
-ring pool. The pools is by default 10 bytes in size but it can be resized
+ring pool. The pool is by default 8 bytes in size but it can be resized
 if you need a bigger one. When the last bit is filled, the algorithm rolls back
 and starts again from the first one.
 

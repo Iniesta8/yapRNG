@@ -5,7 +5,7 @@ This is a simple sketch to demonstrate the use of yapRNG, the
 yapRNG is a simple pseudo-random number generator. It uses a mechanism based
 on an interrupt raised by the WatchDog Timer of the microcontroller to
 collect entropy and a Fibonacci 32 bit LFSR (Linear Feedback Shift Register)
-to distribuite it into a pool.
+to distribute it into a pool.
 
 More info on the mechanism of the entropy collector and the methods
 and their usage can be found into the README file.
