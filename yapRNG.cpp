@@ -27,7 +27,7 @@ uint8_t yapRNG::nextByte() {
 
   while (_prngPointer < 1) {
   } // value is not ready yet, wait...
-  
+
   SREG &= ~(1 << SREG_I); // disable interrupts to access the pool securely
   _result = _prngPool[0]; // get the first byte
   // shift the bytes of the pool to the left to full the empty cell

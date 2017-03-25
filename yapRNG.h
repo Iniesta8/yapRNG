@@ -1,5 +1,5 @@
 /*
-        yapRNG.h - <y>et <another> <p>seudo <R>andom <N>umber <G>enerator
+        yapRNG.h - <y>et <a>nother <p>seudo <R>andom <N>umber <G>enerator
 
     yapRNG is a simple pseudo-random number generator. It uses
     a mechanism based on an interrupt raised by the WatchDog
@@ -9,10 +9,10 @@
 
     ** IMPORTANT: yapRNG is NOT intended for use in critical applications!! **
 
-    For more infos, please read the README.txt file.
+    For more infos, please read the README.md file.
 
-    Inspired by Leonardo Miliani <www DOT leonardomiliani DOT com>
-    
+    Written by Andi Schnebinger.
+    Inspired by Leonardo Miliani <www DOT leonardomiliani DOT com>.
     He wrote a library using a Galois LFSR to generate random bits.
     The latest version of his library can be found at:
     https://github.com/leomil72

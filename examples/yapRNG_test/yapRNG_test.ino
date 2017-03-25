@@ -10,6 +10,7 @@ to distribuite it into a pool.
 More info on the mechanism of the entropy collector and the methods
 and their usage can be found into the README file.
 
+Written by Andi Schnebinger.
 Inspired by Leonardo Miliani <leonardo AT leonardomiliani DOT com> and his
 Galois LFSR based pRNG library.
 
