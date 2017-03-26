@@ -31,10 +31,11 @@ uint8_t yapRNG::nextByte() {
   SREG &= ~(1 << SREG_I); // disable interrupts to access the pool securely
   _result = _prngPool[0]; // get the first byte
   // shift the bytes of the pool to the left to full the empty cell
-  for (uint8_t _tempPointer = 0; _tempPointer < PRNG_POOL_SIZE;
+  for (uint8_t _tempPointer = 0; _tempPointer < (PRNG_POOL_SIZE - 1);
        _tempPointer++) {
     _prngPool[_tempPointer] = _prngPool[_tempPointer + 1];
   }
+  _prngPool[PRNG_POOL_SIZE - 1] = 0;
   // clear the last cell - we don't want to insert recursion into the pool
   _prngPool[_prngPointer] = 0;
   _prngPointer--;
@@ -43,7 +44,9 @@ uint8_t yapRNG::nextByte() {
 }
 
 // return an unsinged int (16-bits) from the pool
-uint16_t yapRNG::nextInt() { return (((uint16_t)nextByte() << 8) | nextByte()); }
+uint16_t yapRNG::nextInt() {
+  return (((uint16_t)(nextByte()) << 8) | nextByte());
+}
 
 // return an unsinged long (32-bits) from the pool
 uint32_t yapRNG::nextLong() {

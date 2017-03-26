@@ -34,7 +34,7 @@ patterns. If you need a more secure algorithm, try looking something else.
 
 // library inclusion
 #include "yapRNG.h"
-yapRNG prng; // new instance of the class pRNG
+yapRNG prng; // new instance of the class yapRNG
 
 // setup
 void setup() {
