@@ -4,15 +4,15 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-yapRNG      KEYWORD1
+yapRNG	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-nextByte  KEYWORD2
-nextInt   KEYWORD2
-nextLong  KEYWORD2
+nextByte	KEYWORD2
+nextInt	KEYWORD2
+nextLong	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
