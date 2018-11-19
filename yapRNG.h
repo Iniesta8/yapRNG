@@ -70,7 +70,7 @@ public:
   uint32_t nextLong(void);
 
 private:
-  void _setWDT();
+  void setWDT();
 };
 
 #endif
